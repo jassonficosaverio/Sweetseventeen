@@ -1,0 +1,5 @@
+.final-name{font:500 14px 'Playfair Display',serif;letter-spacing:.12em;color:var(--rose-d)}
+.card{width:min(460px,92vw);padding:24px;border-radius:20px;background:var(--glass);backdrop-filter:blur(10px);
+  border:1px solid rgba(255,255,255,.85);box-shadow:0 16px 40px rgba(122,101,144,.2)}
+.card p#finalMsg{font:500 17px/1.7 'Playfair Display',serif;color:var(--ink)}
+.sign{margin-top:12px;font:32px 'Great Vibes',cursive;color:var(--rose-d)}

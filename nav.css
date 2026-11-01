@@ -1,0 +1,6 @@
+.dots{position:fixed;bottom:14px;left:50%;transform:translateX(-50%);z-index:50;display:flex;gap:6px;padding:7px 12px;border-radius:999px;
+  background:var(--glass);backdrop-filter:blur(8px);box-shadow:0 4px 14px rgba(74,53,96,.12)}
+.dots i{width:7px;height:7px;border-radius:50%;background:rgba(122,101,144,.25);transition:all .4s}
+.dots i.done{background:#e9a1bb}
+.dots i.now{width:20px;border-radius:5px;background:linear-gradient(90deg,#b79be3,#ee9db8)}
+.devnext{position:fixed;left:10px;bottom:48px;z-index:90;font:11px 'Poppins';padding:6px 10px;border-radius:8px;border:1px dashed var(--rose);background:rgba(255,255,255,.8);color:var(--rose-d);cursor:pointer}

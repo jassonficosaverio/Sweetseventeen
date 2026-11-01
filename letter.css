@@ -1,0 +1,6 @@
+.paper{position:relative;width:min(560px,92vw);max-height:56vh;overflow-y:auto;text-align:left;padding:28px 26px;border-radius:14px;
+  border:1px solid rgba(201,138,134,.25);box-shadow:0 18px 40px rgba(122,101,144,.22);
+  background-image:repeating-linear-gradient(transparent 0 29px,rgba(238,157,184,.22) 29px 30px);background-color:#fffdfb}
+.paper-text{white-space:pre-wrap;font:500 16px/30px 'Playfair Display',serif;color:var(--ink);display:inline}
+.cursor{display:inline-block;width:2px;height:1.1em;background:var(--rose);vertical-align:text-bottom;margin-left:2px;animation:blink 1s steps(2) infinite}
+@keyframes blink{50%{opacity:0}}

@@ -1,0 +1,17 @@
+/* awan lucu yang melayang */
+.cloud{position:fixed;z-index:0;border-radius:50px;background:rgba(255,255,255,.7);filter:blur(2px);pointer-events:none;opacity:.8}
+.cloud::before,.cloud::after{content:"";position:absolute;background:inherit;border-radius:50%}
+.cloud::before{width:55%;height:160%;left:14%;top:-70%}
+.cloud::after{width:42%;height:130%;right:12%;top:-45%}
+.c1{width:120px;height:34px;top:14%;left:-160px;animation:drift 70s linear infinite}
+.c2{width:170px;height:44px;top:62%;left:-220px;animation:drift 95s linear -30s infinite;opacity:.6}
+.c3{width:90px;height:26px;top:38%;left:-120px;animation:drift 60s linear -12s infinite;opacity:.55}
+@keyframes drift{to{transform:translateX(calc(100vw + 340px))}}
+
+/* ranting sakura di pojok */
+.branch{position:fixed;top:-8px;width:min(54vw,310px);z-index:3;pointer-events:none;opacity:.96;
+  filter:drop-shadow(0 6px 10px rgba(214,110,150,.25))}
+.branch.left{left:-12px;transform-origin:0 0;animation:swayL 6s ease-in-out infinite alternate}
+.branch.right{right:-12px;transform-origin:100% 0;animation:swayR 7s ease-in-out -2s infinite alternate;transform:scaleX(-1)}
+@keyframes swayL{from{transform:rotate(-1.5deg)}to{transform:rotate(2deg)}}
+@keyframes swayR{from{transform:scaleX(-1) rotate(-1.5deg)}to{transform:scaleX(-1) rotate(2deg)}}

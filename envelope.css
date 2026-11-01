@@ -1,0 +1,18 @@
+.envelope{position:relative;width:min(300px,78vw);height:min(200px,52vw);cursor:pointer;margin:14px 0;
+  filter:drop-shadow(0 16px 24px rgba(122,101,144,.3));animation:float 4s ease-in-out infinite}
+@keyframes float{50%{transform:translateY(-8px)}}
+.envelope>div{position:absolute}
+.env-back{inset:0;background:linear-gradient(145deg,#f3c9dc,#d9b6ec);border-radius:10px}
+.env-letter{left:8%;right:8%;top:6%;height:84%;background:#fffaf8;border-radius:6px;display:flex;align-items:center;justify-content:center;
+  font-size:28px;padding:0 10px;text-align:center;transition:transform .9s .35s ease;z-index:2;box-shadow:0 2px 8px rgba(0,0,0,.08)}
+.env-front{inset:0;z-index:3;border-radius:10px;background:linear-gradient(160deg,#fbdbe8,#e2c4f2);
+  clip-path:polygon(0 0,50% 58%,100% 0,100% 100%,0 100%)}
+.env-flap{left:0;right:0;top:0;height:58%;z-index:4;transform-origin:top;transition:transform .7s ease,z-index 0s .35s;
+  background:linear-gradient(#f2b6cf,#dfa6c9);clip-path:polygon(0 0,100% 0,50% 100%)}
+.seal{left:50%;top:48%;transform:translate(-50%,-50%);z-index:5;width:44px;height:44px;border-radius:50%;
+  background:radial-gradient(circle at 35% 30%,#ffb9ca,#c8587a);color:#fff;display:flex;align-items:center;justify-content:center;
+  font-size:20px;box-shadow:0 4px 10px rgba(0,0,0,.25);transition:opacity .3s}
+.envelope.open{animation:none}
+.envelope.open .env-flap{transform:rotateX(180deg);z-index:1}
+.envelope.open .env-letter{transform:translateY(-70%) scale(1.06)}
+.envelope.open .seal{opacity:0}

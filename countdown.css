@@ -1,0 +1,7 @@
+.date-chip{font:500 12px 'Poppins';letter-spacing:.12em;padding:6px 16px;border-radius:999px;background:var(--glass);color:var(--rose-d);border:1px solid rgba(255,255,255,.8)}
+.count{display:flex;gap:12px;margin:6px 0}
+.count div{width:72px;padding:14px 0 10px;border-radius:18px;background:var(--glass);backdrop-filter:blur(8px);
+  border:1px solid rgba(255,255,255,.8);box-shadow:0 8px 24px rgba(122,101,144,.15)}
+.count b{display:block;font:700 28px 'Playfair Display',serif;color:var(--rose-d)}
+.count span{font-size:10px;letter-spacing:.2em;text-transform:uppercase;color:var(--ink-soft)}
+@media(max-width:420px){.count{gap:8px}.count div{width:62px}.count b{font-size:23px}}
